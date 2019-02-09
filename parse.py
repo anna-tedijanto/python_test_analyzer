@@ -2,7 +2,7 @@ import ast
 
 ### Does this string contain hello world?
 def findHello():
-    with open('hello.py') as f:
+    with open('hello.py', 'r') as f:
         content = f.read()
 
     code = ast.parse(content)
